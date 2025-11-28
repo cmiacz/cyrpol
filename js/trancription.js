@@ -45,7 +45,7 @@ const transliterationMap = {
   le: "łě",
   li: "łi",
 
-  a: "a",
+  a: "а",
   b: "б",
   c: "ц",
   č: "ч",
