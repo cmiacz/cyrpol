@@ -1,6 +1,6 @@
 const { test } = require("node:test");
 const assert = require("node:assert/strict");
-const { convertWord } = require("./trancription.js");
+const { convertWord } = require("./transcription.js");
 
 const map = { a: "а", b: "б", c: "ц" };
 

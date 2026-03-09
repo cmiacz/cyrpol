@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "test": "node --test js/trancription.test.js"
+    "test": "node --test js/transcription.test.js"
   }
 }

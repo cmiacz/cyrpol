@@ -112,9 +112,9 @@ const convertWord = (source, convertionMap) => {
 function handleTextChange() {
   var source = $(this).val();
   var transcribed = transcribe(source);
-  var cyrilic = transliterate(transcribed);
+  var cyrillic = transliterate(transcribed);
 
-  $("#cyrilicText").empty().append(cyrilic);
+  $("#cyrillicText").empty().append(cyrillic);
   $("#transcribedText").empty().append(transcribed);
 }
 
