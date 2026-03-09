@@ -103,10 +103,13 @@ const convertWord = (source, convertionMap) => {
 
   if (source === source.toLowerCase()) return result;
   if (source === source.toUpperCase()) return result.toUpperCase();
-  if (source.charAt(0) === source.charAt(0).toUpperCase())
-    return result.charAt(0).toUpperCase() + result.slice(1);
-
-  return result;
+  return [...result]
+    .map((char, i) =>
+      i < source.length && source[i] === source[i].toUpperCase()
+        ? char.toUpperCase()
+        : char
+    )
+    .join("");
 };
 
 function handleTextChange() {

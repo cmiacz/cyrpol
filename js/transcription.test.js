@@ -16,6 +16,6 @@ test("capitalized input produces capitalized output", () => {
   assert.strictEqual(convertWord("Abc", map), "Абц");
 });
 
-test("mixed case input produces lowercase output", () => {
-  assert.strictEqual(convertWord("aBc", map), "абц");
+test("mixed case input produces mixed case output", () => {
+  assert.strictEqual(convertWord("aBc", map), "аБц");
 });
