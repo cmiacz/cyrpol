@@ -118,6 +118,12 @@ function handleTextChange() {
   $("#transcribedText").empty().append(transcribed);
 }
 
-$(document).ready(function () {
-  $("#sourceText").change(handleTextChange);
-});
+if (typeof $ !== "undefined") {
+  $(document).ready(function () {
+    $("#sourceText").change(handleTextChange);
+  });
+}
+
+if (typeof module !== "undefined") {
+  module.exports = { convertWord };
+}
