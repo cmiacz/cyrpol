@@ -112,21 +112,6 @@ const convertWord = (source, convertionMap) => {
     .join("");
 };
 
-function handleTextChange() {
-  var source = $(this).val();
-  var transcribed = transcribe(source);
-  var cyrillic = transliterate(transcribed);
-
-  $("#cyrillicText").empty().append(cyrillic);
-  $("#transcribedText").empty().append(transcribed);
-}
-
-if (typeof $ !== "undefined") {
-  $(document).ready(function () {
-    $("#sourceText").change(handleTextChange);
-  });
-}
-
 if (typeof module !== "undefined") {
   module.exports = { convertWord };
 }

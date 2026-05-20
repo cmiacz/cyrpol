@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <title>Cyrylica Polska</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -14,6 +16,16 @@
       </div>
     </nav>
 
+    <div class="container">
+      <section>
+        <h3>Alfabet</h3>
+        <p>
+          Poniższa tabela przedstawia pełen alfabet cyrylicy dla języka polskiego wraz z odpowiadającymi im literami i dwuznakami łacińskimi.
+          W górnym wierszu każdej sekcji znajduje się znak cyrylicy, a w dolnym jego polski odpowiednik używany w standardowej pisowni.
+        </p>
+      </section>
+    </div>
+  
     <div class="container">
       <table class="table table-striped table table-bordered">
         <thead>
@@ -104,9 +116,25 @@
     </div>
 
     <div class="container">
+      <section>
+        <h3>Zasady ortografii</h3>
+        <p>
+          Cyrylica dla języka polskiego opiera się na zasadzie fonetycznej: każdej polskiej głosce odpowiada jeden znak cyrylicy.
+          Polskie dwuznaki (cz, sz, rz, ch) są zapisywane pojedynczymi literami (Ч, Ш, Ԗ, Х), a zmiękczenia spółgłosek zaznaczane są znakiem miękkim (Ь) lub literami jotowanymi (Є, Я).
+          Samogłoski nosowe ę i ą zachowują swoje odrębne znaki (Я, Ѫ), co pozwala wiernie oddać brzmienie polskich wyrazów.
+        </p>
+      </section>
+    </div>
+
+    <div class="container">
+      <section>
+        <h3>Konwerter</h3>
+        <p>
+          Wpisz polski tekst w polu poniżej, aby automatycznie uzyskać jego zapis cyrylicą oraz transkrypcję fonetyczną.
+        </p>
+      </section>
       <div class="row">
         <div class="col">
-          <label for="sourceText" class="form-label">Tekst orginalny</label>
           <textarea class="form-control" id="sourceText" rows="5"></textarea>
         </div>
       </div>
@@ -124,9 +152,7 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/transcription.js"></script>
+    <script src="js/ui.js"></script>
   </body>
 </html>
